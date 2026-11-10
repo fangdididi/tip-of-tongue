@@ -1,0 +1,140 @@
+{
+  "title": "Starter house lexicon (example data, extend it with your team's own words)",
+  "entries": [
+    {
+      "name": "dolly in",
+      "aliases": ["push in", "推镜", "推轨前移"],
+      "field": "camera",
+      "means": "The camera itself travels toward the subject, so the background shifts and the depth between objects changes.",
+      "tell": "Objects at different distances grow at different speeds; edges of the frame slide past.",
+      "not": ["zoom in"],
+      "contrast": "In a zoom in, everything grows at the same rate and the background looks squashed flatter.",
+      "knobs": ["distance travelled", "duration", "easing", "end framing"],
+      "cues": ["camera moves closer", "walks toward", "approach", "靠近", "镜头往前走"],
+      "ask": "Slow dolly in from a medium shot to a close-up of her hands over 4 s, ease-in-out, no zoom."
+    },
+    {
+      "name": "zoom in",
+      "aliases": ["变焦推进", "拉近变焦"],
+      "field": "camera",
+      "means": "The lens changes focal length while the camera stays put, so the whole picture is magnified evenly.",
+      "tell": "Foreground and background enlarge together; parallax is absent.",
+      "not": ["dolly in"],
+      "knobs": ["start and end focal length or scale", "duration", "easing"],
+      "cues": ["magnify", "enlarge", "放大", "变大"],
+      "ask": "Zoom in from 1x to 1.6x over 2 s, linear, camera locked off."
+    },
+    {
+      "name": "orbit",
+      "aliases": ["arc shot", "环绕", "环绕镜头"],
+      "field": "camera",
+      "means": "The camera circles the subject at a steady distance, keeping it centred while the background wheels behind it.",
+      "tell": "The subject stays the same size; we see a different side of it as the background turns.",
+      "not": ["pan", "turntable"],
+      "contrast": "In a turntable the object spins and the camera and background stay still.",
+      "knobs": ["arc angle", "direction", "duration", "height"],
+      "cues": ["goes around", "circle around", "floats around", "绕着", "转一圈"],
+      "ask": "Orbit 90° to the right around the coffee cup at table height over 5 s, ease-in-out."
+    },
+    {
+      "name": "pan",
+      "aliases": ["摇镜", "水平摇"],
+      "field": "camera",
+      "means": "The camera stays in one spot and swivels left or right, like turning your head.",
+      "tell": "Near and far objects slide past at nearly the same angle; we never see around anything.",
+      "not": ["orbit", "truck"],
+      "knobs": ["angle", "direction", "duration", "easing"],
+      "cues": ["turns head", "sweep across", "左右扫", "扫过去"],
+      "ask": "Pan from left to right across the skyline, 40°, 6 s, linear."
+    },
+    {
+      "name": "mask reveal",
+      "aliases": ["wipe-in text", "遮罩显现", "遮罩出字"],
+      "field": "motion graphics",
+      "means": "Text or an image slides out from behind an invisible edge, so it appears to emerge from a slot.",
+      "tell": "Letters are cut off by a straight line until fully out; nothing fades.",
+      "not": ["fade in", "typewriter"],
+      "knobs": ["direction", "duration", "stagger between lines", "easing"],
+      "cues": ["slides up from behind a line", "comes out of a slot", "从下面冒出来", "从线后面出来"],
+      "ask": "Mask reveal each title line from below, 0.6 s per line, 80 ms stagger, ease-out."
+    },
+    {
+      "name": "typewriter",
+      "aliases": ["打字机", "逐字出现"],
+      "field": "motion graphics",
+      "means": "Characters appear one at a time in reading order, often with a blinking caret at the end.",
+      "tell": "Each character pops in whole, at a steady rhythm, left to right.",
+      "not": ["mask reveal", "scramble"],
+      "knobs": ["characters per second", "caret on or off", "hold at end"],
+      "cues": ["letters appear one by one", "typing", "一个字一个字", "打字"],
+      "ask": "Typewriter the tagline at 18 characters per second, caret on, hold 1.5 s at the end."
+    },
+    {
+      "name": "count-up",
+      "aliases": ["number roll", "数字滚动", "数字递增"],
+      "field": "motion graphics",
+      "means": "A figure climbs from a start value to its final value so the viewer feels the size of the number.",
+      "tell": "Digits change rapidly then settle; the last digits slow down before stopping.",
+      "not": ["odometer flip"],
+      "knobs": ["start value", "end value", "duration", "easing"],
+      "cues": ["numbers go up fast", "number spins up", "数字往上涨", "数字跳动"],
+      "ask": "Count-up from 0 to 12,400 over 1.2 s, ease-out, thousands separator on."
+    },
+    {
+      "name": "skeleton screen",
+      "aliases": ["骨架屏", "占位骨架"],
+      "field": "UI",
+      "means": "Grey blocks shaped like the coming content hold its place while data loads.",
+      "tell": "The layout is visible before any text or images arrive, often with a soft shimmer.",
+      "not": ["spinner", "progress bar"],
+      "knobs": ["shimmer on or off", "shimmer period", "minimum show time"],
+      "cues": ["grey boxes before loading", "placeholder blocks", "灰色块", "加载时的占位"],
+      "ask": "Skeleton screen for the feed card with a 1.4 s shimmer, shown for at least 300 ms."
+    },
+    {
+      "name": "sticky header shrink",
+      "aliases": ["吸顶收缩", "顶栏收缩"],
+      "field": "web effect",
+      "means": "The page header stays pinned at the top and compacts as you scroll down.",
+      "tell": "The logo and bar get smaller after the first scroll and stay visible.",
+      "not": ["hide on scroll"],
+      "knobs": ["scroll distance before shrink", "start and end height", "duration"],
+      "cues": ["header gets smaller when scrolling", "top bar shrinks", "滚动时顶部变小"],
+      "ask": "Sticky header shrink from 88 px to 56 px after 120 px of scroll, 200 ms, ease-out."
+    },
+    {
+      "name": "rim light",
+      "aliases": ["edge light", "轮廓光", "边缘光"],
+      "field": "lighting",
+      "means": "Light from behind the subject draws a bright outline that separates it from the background.",
+      "tell": "A thin glowing edge on hair and shoulders while the face is lit by something softer.",
+      "not": ["backlight silhouette", "halo glow"],
+      "contrast": "In a silhouette the front is dark; with rim light the front is still lit.",
+      "knobs": ["side or sides", "intensity relative to key", "colour temperature"],
+      "cues": ["glowing outline", "light around the edges", "边上发光", "轮廓亮一圈"],
+      "ask": "Add a warm rim light from behind left at about 2x the key, 3200 K, face lit soft from the front."
+    },
+    {
+      "name": "sidechain duck",
+      "aliases": ["ducking", "闪避压低", "人声闪避"],
+      "field": "sound",
+      "means": "Music automatically drops in volume whenever the voice speaks, then comes back.",
+      "tell": "The bed dips under every sentence and swells in the gaps.",
+      "not": ["fade out"],
+      "knobs": ["depth in dB", "attack", "release"],
+      "cues": ["music gets quieter when talking", "背景音乐让开人声", "说话时音乐变小"],
+      "ask": "Sidechain duck the music under the voice by 8 dB, 50 ms attack, 400 ms release."
+    },
+    {
+      "name": "match cut",
+      "aliases": ["匹配剪辑", "形状匹配转场"],
+      "field": "editing",
+      "means": "A cut between two shots that share a shape, motion or position, so the eye carries over the join.",
+      "tell": "Something round becomes something else round in the same spot of the frame.",
+      "not": ["jump cut", "morph"],
+      "knobs": ["what is matched (shape, motion, colour)", "frame position", "cut point"],
+      "cues": ["one thing turns into another on the cut", "形状接上", "画面接得很巧"],
+      "ask": "Match cut from the spinning coin to the turning wheel, both centred, cut at 2.0 s on the same rotation speed."
+    }
+  ]
+}
